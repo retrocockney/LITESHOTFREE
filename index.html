@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOWNLOADLITESHOT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        p {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+        }
+        .download-btn:hover {
+            background-color: #e4e4e7;
+            transform: translateY(-1px);
+        }
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        .footer {
+            margin-top: 48px;
+            font-size: 0.85rem;
+            color: #52525b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>DOWNLOADLITESHOT</h1>
+        <p>Get the latest version of LITESHOT48 ready for deployment. Click below to initiate your file download.</p>
+        
+        <!-- Points to your file for download -->
+        <a href="LITESHOT48.html" download="LITESHOT48.html" class="download-btn">Download File</a>
+
+        <div class="footer">
+            Hosted and ready for GitHub Pages.
+        </div>
+    </div>
+
+</body>
+</html>
