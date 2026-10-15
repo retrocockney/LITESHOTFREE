@@ -3,81 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOWNLOADLITESHOT</title>
+    <title>GAME DOWNLOADS | LITESHOT + LITERYTHYM</title>
+
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
             background-color: #000000;
             color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 24px;
         }
+
         .container {
+            width: 100%;
+            max-width: 700px;
             text-align: center;
-            max-width: 600px;
         }
+
         h1 {
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 7vw, 2.8rem);
             font-weight: 800;
-            letter-spacing: -0.025em;
-            margin-bottom: 24px;
-            color: #ffffff;
+            letter-spacing: -0.04em;
+            margin-bottom: 12px;
             text-transform: uppercase;
         }
-        p {
+
+        .intro {
             color: #a1a1aa;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 32px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
+
+        .downloads {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .download-card {
+            border: 1px solid #27272a;
+            background: #09090b;
+            border-radius: 14px;
+            padding: 28px 20px;
+        }
+
+        .download-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .download-card p {
+            color: #a1a1aa;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
         .download-btn {
             display: inline-block;
             background-color: #ffffff;
             color: #000000;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1rem;
-            padding: 14px 32px;
+            padding: 14px 24px;
             border-radius: 8px;
             text-decoration: none;
-            transition: background-color 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.2s ease,
+                        transform 0.1s ease;
         }
+
         .download-btn:hover {
-            background-color: #e4e4e7;
-            transform: translateY(-1px);
+            background-color: #d4d4d8;
+            transform: translateY(-2px);
         }
+
         .download-btn:active {
             transform: translateY(0);
         }
+
         .footer {
-            margin-top: 48px;
+            margin-top: 36px;
             font-size: 0.85rem;
             color: #52525b;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 600px) {
+            .downloads {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
+    <main class="container">
 
-    <div class="container">
-        <h1>DOWNLOADLITESHOT</h1>
-        <p>Get the latest version of LITESHOT48 ready for deployment. Click below to initiate your file download.</p>
-        
-        <!-- Points to your file for download -->
-        <a href="LITESHOT48.html" download="LITESHOT48.html" class="download-btn">Download File</a>
+        <h1>Game Downloads</h1>
 
-        <div class="footer">
-            Hosted and ready for GitHub Pages.
-        </div>
-    </div>
+        <p class="intro">
+            Download your games below.
+            Choose the game you want to play!
+        </p>
 
+        <section class="downloads">
+
+            <!-- LITESHOT DOWNLOAD -->
+            <article class="download-card">
+                <h2>LITESHOT48</h2>
+
+                <p>
+                    Get the latest available LITESHOT48
+                    game file.
+                </p>
+
+                <a
+                    href="LITESHOT48.html"
+                    download="LITESHOT48.html"
+                    class="download-btn">
+                    Download LITESHOT
+                </a>
+            </article>
+
+            <!-- LITERYTHYM DOWNLOAD -->
+            <article class="download-card">
+                <h2>LITERYTHYM</h2>
+
+                <p>
+                    Download LITERYTHYM,
+                    the four-lane rhythm game.
+                </p>
+
+                <a
+                    href="LITERYTHYM4.html"
+                    download="LITERYTHYM4.html"
+                    class="download-btn">
+                    Download LITERYTHYM
+                </a>
+            </article>
+
+        </section>
+
+        <footer class="footer">
+            Hosted on GitHub Pages.
+        </footer>
+
+    </main>
 </body>
 </html>
