@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME DOWNLOADS | LITESHOT + LITERYTHYM</title>
+
+    <title>GAME DOWNLOADS | LITESHOT + LITERYTHYM + LITEHORROR</title>
 
     <style>
         * {
@@ -57,6 +59,13 @@
             background: #09090b;
             border-radius: 14px;
             padding: 28px 20px;
+            transition: border-color 0.2s ease,
+                        transform 0.2s ease;
+        }
+
+        .download-card:hover {
+            border-color: #52525b;
+            transform: translateY(-2px);
         }
 
         .download-card h2 {
@@ -154,6 +163,23 @@
                 </a>
             </article>
 
+            <!-- LITEHORROR DOWNLOAD -->
+            <article class="download-card">
+                <h2>☠️ LITEHORROR</h2>
+
+                <p>
+                    Survive the horror in LITEHORROR.
+                    Play solo or try multiplayer!
+                </p>
+
+                <a
+                    href="LITEHORRORV39.html"
+                    download="LITEHORRORV39.html"
+                    class="download-btn">
+                    Download LITEHORROR
+                </a>
+            </article>
+
         </section>
 
         <footer class="footer">
@@ -163,3 +189,4 @@
     </main>
 </body>
 </html>
+```
