@@ -2,167 +2,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LITESHOT FREE - Game Downloads</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAME DOWNLOADS | LITESHOT + LITERYTHYM + LITEHORROR</title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #101020, #202044, #101020);
-            color: white;
-            min-height: 100vh;
-        }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        header {
-            text-align: center;
-            padding: 55px 20px 35px;
-            background: rgba(0, 0, 0, 0.35);
-            border-bottom: 2px solid #5555ff;
-        }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #080808;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: clamp(2.5rem, 7vw, 4.5rem);
-            color: #7777ff;
-            text-shadow: 0 0 20px #5555ff;
-        }
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
 
-        header p {
-            color: #ccccdd;
-            font-size: 1.1rem;
-            margin-top: 12px;
-        }
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: 3px;
+  font-weight: 900;
+}
 
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 35px 20px;
-        }
+header p {
+  color: #999;
+  margin-top: 12px;
+}
 
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 22px;
-        }
+main {
+  width: min(1000px, calc(100% - 32px));
+  margin: 20px auto 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
 
-        .games {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 22px;
-        }
+.game-card {
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  transition: transform 0.18s, border-color 0.18s;
+}
 
-        .game-card {
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(150, 150, 255, 0.25);
-            border-radius: 18px;
-            padding: 25px;
-            transition: transform 0.2s, border-color 0.2s;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        }
+.game-card:hover {
+  transform: translateY(-4px);
+  border-color: #777;
+}
 
-        .game-card:hover {
-            transform: translateY(-5px);
-            border-color: #7777ff;
-        }
+.tag {
+  color: #aaa;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-        .game-icon {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
-        }
+.game-card h2 {
+  margin: 14px 0 10px;
+  font-size: 1.65rem;
+}
 
-        .game-card h3 {
-            font-size: 1.4rem;
-            margin: 0 0 12px;
-        }
+.game-card p {
+  color: #aaa;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  flex: 1;
+}
 
-        .game-card p {
-            color: #ccccdd;
-            line-height: 1.6;
-            min-height: 48px;
-        }
+.download {
+  display: block;
+  text-align: center;
+  background: #f5f5f5;
+  color: #080808;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 13px 16px;
+  border-radius: 8px;
+}
 
-        .download-btn {
-            display: inline-block;
-            width: 100%;
-            margin-top: 12px;
-            padding: 13px 15px;
-            background: #6262ff;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-            border-radius: 10px;
-            transition: background 0.2s;
-        }
+.download:hover {
+  background: #d8d8d8;
+}
 
-        .download-btn:hover {
-            background: #8585ff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px 15px;
-            color: #9999bb;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 20px;
-        }
-    </style>
+footer {
+  color: #666;
+  text-align: center;
+  padding: 0 20px 28px;
+  font-size: 0.85rem;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>LITESHOT FREE</h1>
-        <p>Play games. Download. Have fun.</p>
-    </header>
+<header>
+  <h1>GAME DOWNLOADS</h1>
+  <p>Download and play the games</p>
+</header>
 
-    <main>
-        <h2 class="section-title">🎮 Game Library</h2>
+<main>
 
-        <div class="games">
+  <section class="game-card">
+    <span class="tag">FPS / Action</span>
+    <h2>LITESHOT</h2>
+    <p>Play the latest build of LITESHOT, featuring Wipeout mode and more.</p>
+    <a class="download" href="LITESHOTV67%281%29.html" download>
+      DOWNLOAD LITESHOT V67
+    </a>
+  </section>
 
-            <div class="game-card">
-                <div class="game-icon">⚡</div>
-                <h3>LITESHOT 48</h3>
-                <p>Jump in and play LITESHOT.</p>
-                <a class="download-btn"
-                   href="LITESHOT48.html"
-                   download="LITESHOT48.html">
-                    Download LITESHOT 48
-                </a>
-            </div>
+  <section class="game-card">
+    <span class="tag">Rhythm</span>
+    <h2>LITERYTHYM</h2>
+    <p>A neon rhythm game. Hit the notes and try to beat your high score.</p>
+    <a class="download" href="LITERYTHYM4.html" download>
+      DOWNLOAD LITERYTHYM
+    </a>
+  </section>
 
-            <div class="game-card">
-                <div class="game-icon">🎵</div>
-                <h3>LITERYTHYM 4</h3>
-                <p>Test your rhythm and timing.</p>
-                <a class="download-btn"
-                   href="LITERYTHYM4.html"
-                   download="LITERYTHYM4.html">
-                    Download LITERYTHYM 4
-                </a>
-            </div>
+  <section class="game-card">
+    <span class="tag">Horror</span>
+    <h2>LITEHORROR</h2>
+    <p>Explore, survive, and see how long you can last.</p>
+    <a class="download" href="LITEHORRORV59.html" download>
+      DOWNLOAD LITEHORROR V59
+    </a>
+  </section>
 
-            <div class="game-card">
-                <div class="game-icon">☠️</div>
-                <h3>LITEHORROR V59</h3>
-                <p>Enter the horror experience and see if you can survive.</p>
-                <a class="download-btn"
-                   href="LITEHORRORV59.html"
-                   download="LITEHORRORV59.html">
-                    Download LITEHORROR V59
-                </a>
-            </div>
+</main>
 
-        </div>
-    </main>
-
-    <footer>
-        <p>© LITESHOT FREE — Made for gamers.</p>
-    </footer>
+<footer>
+  Keep index.html and all game HTML files in the same GitHub Pages folder.
+</footer>
 
 </body>
 </html>
