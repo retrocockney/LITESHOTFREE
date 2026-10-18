@@ -2,149 +2,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAME DOWNLOADS | LITESHOT + LITERYTHYM + LITEHORROR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME DOWNLOADS | LITESHOT + LITERYTHYM + LITEHORROR</title>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #080808;
-  color: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-header {
-  text-align: center;
-  padding: 55px 20px 35px;
-}
+    header {
+      text-align: center;
+      padding: 55px 20px 35px;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  letter-spacing: 3px;
-  font-weight: 900;
-}
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      letter-spacing: 3px;
+      font-weight: 900;
+    }
 
-header p {
-  color: #999;
-  margin-top: 12px;
-}
+    header p {
+      color: #999;
+      margin-top: 12px;
+    }
 
-main {
-  width: min(1000px, calc(100% - 32px));
-  margin: 20px auto 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-}
+    main {
+      width: min(1000px, calc(100% - 32px));
+      margin: 20px auto 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
 
-.game-card {
-  background: #111;
-  border: 1px solid #292929;
-  border-radius: 14px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  min-height: 250px;
-  transition: transform 0.18s, border-color 0.18s;
-}
+    .game-card {
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      transition: transform 0.18s ease, border-color 0.18s ease;
+    }
 
-.game-card:hover {
-  transform: translateY(-4px);
-  border-color: #777;
-}
+    .game-card:hover {
+      transform: translateY(-4px);
+      border-color: #777;
+    }
 
-.tag {
-  color: #aaa;
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+    .tag {
+      color: #aaa;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-.game-card h2 {
-  margin: 14px 0 10px;
-  font-size: 1.65rem;
-}
+    .game-card h2 {
+      margin: 14px 0 10px;
+      font-size: 1.65rem;
+    }
 
-.game-card p {
-  color: #aaa;
-  line-height: 1.5;
-  margin: 0 0 24px;
-  flex: 1;
-}
+    .game-card p {
+      color: #aaa;
+      line-height: 1.5;
+      margin: 0 0 24px;
+      flex: 1;
+    }
 
-.download {
-  display: block;
-  text-align: center;
-  background: #f5f5f5;
-  color: #080808;
-  text-decoration: none;
-  font-weight: 800;
-  padding: 13px 16px;
-  border-radius: 8px;
-}
+    .download {
+      display: block;
+      text-align: center;
+      background: #f5f5f5;
+      color: #080808;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 13px 16px;
+      border-radius: 8px;
+      transition: background 0.18s ease;
+    }
 
-.download:hover {
-  background: #d8d8d8;
-}
+    .download:hover {
+      background: #d8d8d8;
+    }
 
-footer {
-  color: #666;
-  text-align: center;
-  padding: 0 20px 28px;
-  font-size: 0.85rem;
-}
-</style>
+    footer {
+      color: #666;
+      text-align: center;
+      padding: 0 20px 28px;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>GAME DOWNLOADS</h1>
-  <p>Download and play the games</p>
-</header>
+  <header>
+    <h1>GAME DOWNLOADS</h1>
+    <p>Download and play the games</p>
+  </header>
 
-<main>
+  <main>
 
-  <section class="game-card">
-    <span class="tag">FPS / Action</span>
-    <h2>LITESHOT</h2>
-    <p>Play the latest build of LITESHOT, featuring Wipeout mode and more.</p>
-    <a class="download" href="LITESHOTV67%281%29.html" download>
-      DOWNLOAD LITESHOT V67
-    </a>
-  </section>
+    <!-- LITESHOT -->
+    <section class="game-card">
+      <span class="tag">FPS / Action</span>
+      <h2>LITESHOT</h2>
+      <p>
+        Play LITESHOT, featuring Wipeout mode, boss waves,
+        vehicles and more.
+      </p>
+      <a class="download" href="LITESHOTV67.html" download>
+        DOWNLOAD LITESHOT V67
+      </a>
+    </section>
 
-  <section class="game-card">
-    <span class="tag">Rhythm</span>
-    <h2>LITERYTHYM</h2>
-    <p>A neon rhythm game. Hit the notes and try to beat your high score.</p>
-    <a class="download" href="LITERYTHYM4.html" download>
-      DOWNLOAD LITERYTHYM
-    </a>
-  </section>
+    <!-- LITERYTHYM -->
+    <section class="game-card">
+      <span class="tag">Rhythm</span>
+      <h2>LITERYTHYM</h2>
+      <p>
+        A minimalist neon rhythm game. Hit the notes
+        and try to beat your high score.
+      </p>
+      <a class="download" href="LITERYTHYM4.html" download>
+        DOWNLOAD LITERYTHYM
+      </a>
+    </section>
 
-  <section class="game-card">
-    <span class="tag">Horror</span>
-    <h2>LITEHORROR</h2>
-    <p>Explore, survive, and see how long you can last.</p>
-    <a class="download" href="LITEHORRORV59.html" download>
-      DOWNLOAD LITEHORROR V59
-    </a>
-  </section>
+    <!-- LITEHORROR -->
+    <section class="game-card">
+      <span class="tag">Horror</span>
+      <h2>LITEHORROR</h2>
+      <p>
+        Explore, survive and see how long you can last
+        in this horror game.
+      </p>
+      <a class="download" href="LITEHORRORV59.html" download>
+        DOWNLOAD LITEHORROR V59
+      </a>
+    </section>
 
-</main>
+  </main>
 
-<footer>
-  Keep index.html and all game HTML files in the same GitHub Pages folder.
-</footer>
+  <footer>
+    Keep index.html and all three game HTML files
+    in the same GitHub Pages folder.
+  </footer>
 
 </body>
 </html>
